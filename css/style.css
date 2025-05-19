@@ -64,6 +64,11 @@ img {
 
 /* &==================>navbar<================== */
 
+
+.navbar-toggler-icon{
+  color: white !important;
+}
+
 .nav-logo {
   width: 10%;
 
@@ -269,7 +274,7 @@ img {
 /* &==================>Our-Services section<================== */
 .Our-Services {
   background-color: #f1f1f1;
-  padding: 80px 20px;
+  padding-block: 80px;
   text-align: center;
   margin-block: 60px;
 }
@@ -488,6 +493,9 @@ img {
   font-weight: 400;
   line-height: 25px;
 }
+.feedback .row .inner {
+  display: flex;
+}
 
 .feedback .row h4 {
   color: #333333;
@@ -703,5 +711,14 @@ textarea::placeholder {
     font-size: 15px;
     font-family: "Source Sans 3", serif;
     text-align: center;
+  }
+  .feedback .row .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback .row .inner .left {
+    text-align: center;
+
+    margin-inline: auto;
   }
 }
