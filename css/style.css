@@ -86,8 +86,19 @@ img {
   color: white !important;
   width: fit-content;
 }
+a.nav-link{
+  margin-inline: 10px;
+}
+a.nav-link.active{
+  color: #ff305b !important;
+
+}
 .navbar-nav .nav-link li {
   width: fit-content;
+
+}
+  .navbar-nav .nav-link li a {
+  padding-inline: 30px !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -335,7 +346,7 @@ img {
 
 /* &==================>Our-Portfolio section<================== */
 .Our-Portfolio {
-  padding: 40px;
+  padding-block: 40px;
   text-align: center;
   margin-block: 60px;
 }
@@ -474,6 +485,7 @@ img {
 .feedback .row {
   background-color: #f1f1f1;
   border-radius: 10px;
+  width: 75%;
 }
 
 .feedback .row img {
@@ -503,6 +515,10 @@ img {
 
 .feedback .row .i i {
   color: #f1c30d;
+  transition: 0.5s;
+}
+.feedback .row .i i:hover {
+  color: #ff305b;
 }
 
 /* *==================>Our Blog section<================== */
@@ -698,6 +714,10 @@ textarea::placeholder {
 }
 
 @media (max-width: 760px) {
+
+  .navbar-nav .nav-link li a {
+  margin-inline: 0px;
+}
   .home-caption h1 {
     color: rgb(255, 48, 91);
     font-size: 40px;
@@ -721,4 +741,8 @@ textarea::placeholder {
 
     margin-inline: auto;
   }
+  .feedback .row {
+
+  width: 100%;
+}
 }
